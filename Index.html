@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Vuelos</title>
+    <script src="directory.js" defer></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="hero">
+    </div>
+
+    <div class="">
+
+
+        <div class="container">
+            <h1>Buscador de Vuelos</h1>
+
+            <div class="grid-container">
+
+                <div> <select id="origen" name="origen" placeholder="Origen"></select> </div>
+
+
+                <div> <select id="destino" name="destino" placeholder="Destino"></select></div>
+
+                <!-- Por cuestiones de requerimientos del ejercicio, no se bloquearan fechas anteriores a la actual ya que se
+            indican fechas del 27 al 31 de Mayo -->
+                <div><input type="date" id="fecha-salida" name="fecha-salida" placeholder="Fecha de Salida" required>
+                </div>
+
+
+                <div> <label for="pasajeros">Número de Pasajeros:</label>
+                    <input type="number" id="pasajeros" name="pasajeros" min="1" value="1" required>
+                </div>
+
+                <div class="escala"> Vuelos directos
+
+                    <!-- Vuelos directos <label><input type="checkbox" id="vuelosDirectos-Check" />
+                        </label> -->
+                    <div>
+                        <label class="switch">
+                            <input type="checkbox" id="vuelosDirectos-Check">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+
+                </div>
+
+                <div><button onclick="buscarVuelos()">Buscar Vuelos</button></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="no-resultados" style="visibility: hidden;">
+        <h2>No se encontraron vuelos, intentalo de nuevo.</h2>
+    </div>
+
+    <div id="resultados" class="resultados-lista">
+        <!-- <div id="resultados-filtros"> -->
+            <!-- Aqui van los filtros-->
+            <!-- <select id="aerolineas-filtro" name="aerolineas" placeholder="Aerolinea"></select>
+            <select id="escalas-filtro" name="escalas" placeholder="Escalas"></select>
+            <select id="hora-salida-filtro" name="hora-salida" placeholder="Hora de salida"></select>
+            <select id="hora-llegada-filtro" name="hora-llegada" placeholder="Hora de llegada"></select>
+        </div> -->
+
+            <div id="resultados-vuelos">
+                <!-- Aqui van los resultados de los vuelos -->
+                 <!-- <div class="resultado card">
+
+                    <div class="aerolinea">Germany Airlines</div>
+                    
+
+                    <div class="origen">
+                        <div class="hora">13:30</div>
+                        <div class="origen">ORL</div>
+                    </div>
+
+                    <hr>
+
+                    <div class="avion-icon">
+                        <div class="icono">✈️</div>
+                        <span>Escalas:</span>
+                        <div class="escala">3</div>
+                    </div>
+
+                    <hr>
+
+                    <div class="destino">
+                        <div class="hora">16:40</div>
+                        <div class="origen">MIA</div>
+                    </div>
+
+                    <div class="precio">
+                        <div class="precioxvuelo">Precio Unitario</div>
+                        <div class="precioTotal">$301.98</div>
+                    </div>
+    
+                    <div class="precio">
+                        <div class="precioxvuelo">Precio Total</div>
+                        <div class="precioTotal">$301.98</div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="resultado card">
+                <div class="aerolinea">Germany Airlines</div>
+                <div class="origen">
+                    <div class="hora">13:30</div>
+                    <div class="origen">ORL</div>
+                </div>
+                <hr>
+                <div class="avion-icon">
+                    <div class="icono">✈️</div>
+                    <span>Escalas:</span>
+                    <div class="escala">3</div>
+                </div>
+                <hr>
+                <div class="destino">
+                    <div class="hora">16:40</div>
+                    <div class="origen">MIA</div>
+                </div>
+
+                <div class="precio">
+                    <div class="precioxvuelo">Precio Unitario</div>
+                    <div class="precioTotal">$301.98</div>
+                </div>
+
+                <div class="precio">
+                    <div class="precioxvuelo">Precio Total</div>
+                    <div class="precioTotal">$301.98</div>
+                </div>
+
+            </div>  -->
+
+
+        </div>
+
+</body>
+
+</html>

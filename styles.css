@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: auto;
+    
+
+}
+
+.hero {
+    background-image: url(imagenes/destino1.jpg);
+    background-repeat: no-repeat;
+    background-position: 90% 90%;
+    background-size: cover;
+    height: 25em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: brightness(80%);
+    padding: 0;
+    
+
+}
+
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.62);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.3px);
+    -webkit-backdrop-filter: blur(2.3px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+
+}
+
+.grid-container {
+    margin-top: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    justify-self: unset;
+    align-items: end;
+
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    color: #0056b3;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    /* margin-top: 5px; */
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 20px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .resultado{
+    
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    justify-self: unset;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.62);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.3px);
+    -webkit-backdrop-filter: blur(2.3px);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 10px;
+    margin-top: 1em;
+    margin-left: 4em;
+    margin-right: 4em;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  }
+
+  .resultados-lista{
+    margin: 2%;
+    gap: 2px;
+    
+    
+
+  }
+
+  hr{
+    height: 3px;
+  background-color: rgb(0, 162, 255);
+  }
+
+  .precio{
+    background: rgba(255, 255, 255, 0.342);
+    border-radius: 6px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display:grid;
+    padding: 10px;  
+    
+  }
+
